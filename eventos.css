@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Verdana;
+    background: linear-gradient(135deg, #909ee6 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-template-rows: repeat(4, 200px);
+}
+
+.event-box {
+    background: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #15094b;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+input.event-box,
+select.event-box {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+}
+
+input.event-box::placeholder {
+    color: #666;
+}
+
+input.event-box:focus,
+select.event-box:focus {
+    outline: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+.color-1 {
+    background: #FFB3BA; 
+}
+
+.color-2 {
+    background: #FFDFBA;
+}
+
+.color-3 {
+    background: #FFFFBA; 
+}
+
+.color-4 {
+    background: #BAE1FF; 
+}
+
+.color-5 {
+    background: #BAFFC9; 
+}
+
+.color-6 {
+    background: #E0BBE4; 
+}
+
+.color-7 {
+    background: #FFB4D2; 
+}
+
+.color-8 {
+    background: #C8B8FF; 
+}
